@@ -28,15 +28,17 @@ choice1 = input('You are at a crossroad in the desert, stranded & nothing left t
 if choice1 == "left":
   choice2 = input('Exhausted & left with no other options but to plead for help from the gods above, you begin to see signs of civilization. An empty egyptian ruin with a sort of beacon in the middle, calling for your name. Type "wait", to see if there are any other options or type "move", & wish for the best. ').lower()
   if choice2 == "wait":
-    choice3 = input('At last! A shemagh wearing older gentleman approaches you, riding a camel. He offers you assistance to bring you to the next town forward. Would you like to take your chances? "yes" to hop on the back of the camel, or "no", & take your chances yet again.  ').lower()
+    choice3 = input('At last! A shemagh wearing older gentleman approaches you, riding a camel. He offers you assistance to bring you to the next town forward. Would you like to take your chances? "yes" to hop on the back of the camel, or "no", & take your chances yet again. or, "rob" to attempt to rob him like the little scoundrel that you are. ').lower()
     if choice3 == "yes":
       choice4 = input('Struck by the hand of god, you entered a new city, Palmeeja, where it seems like this may be the final destination for the gold! Would you like to look around & see what this city has to offer? "yes" or "no" ')
       if choice4 == "yes":
         print("Alas! stumbling into a ridden teepee, you find the GREATEST treasure of all time! A woman to love.")
       else:
         print("Growing older & older, more senile as the time flies by, you eventually turn into the old gentleman with the shemagh & camel, hopefully one day to help somebody just as foolish as you were.")
-    else:
+    elif choice3 == "no":
       print("You waited too long! A posse of bobcats have decided they wish for you to DIE!")
+    elif choice3 == "rob":
+      print("You grabbed at his ankle, pulling him off the camel as he wails uncontrollably! With a free camel & to look back on but a guilty conscience, what shall you do now but reflect on what could have been? Game over.")
   else:
     print("You fell for the oldest trick in the book. Start over & reconsider your choices. Good luck.")
 else:
